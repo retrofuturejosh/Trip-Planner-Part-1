@@ -6,30 +6,35 @@
         <script src='./bundle.js' defer></script>
     </head>
     <body>
+        <div id="nav-bar">
+            <a href class="nav-links">Home</a>
+            <a href class="nav-links">About</a>
+            <a href class="nav-links">Contact</a>
+        </div>
         <container id="main-app">
-            <div id="nav-bar">
-                <a href class="nav-links">Home</a>
-                <a href class="nav-links">About</a>
-                <a href class="nav-links">Contact</a>
-            </div>
             <div id="map">
                 <div id="option-box">
-                    <div id="possible locations">
+                    <div id="possible-locations">
                         <h4>Hotels</h4>
-                        <select>
-                            <option value="Hotels">[xxxxxxxx]</option>
-                            <input type="button" value="X">
-                        </select>
+                            <div id='possible-loc-buttons'>
+                                <select>
+                                <option value="Hotels">[xxxxxxxx]</option>
+                                <input type="button" value="X">
+                                </select>
+                            </div>
                         <h4>Restaurants</h4>
-                        <select>
-                            <option value="Restaurants">[xxxxxxxx]</option>
-                            <input type="button" value="X">
-                        </select>
+                            <div id='possible-loc-buttons'>
+                                <select>
+                                <option value="Restaurants">[xxxxxxxx]</option>
+                                <input type="button" value="X">
+                                 </select>
+                            </div>
                         <h4>Things To Do</h4>
-                        <select>
-                            <option value="Things To Do">[xxxxxxxx]</option>
-                            <input type="button" value="X">
-                        </select>
+                            <div id='possible-loc-buttons'>
+                                <select>
+                                <option value="Things To Do">[xxxxxxxx]</option>
+                                <input type="button" value="X"></select>
+                            </div>
                     </div>
                     <div id="itinerary">
                         <div id="itinerary-header"><h2>Itinerary:</h3></div>
@@ -51,6 +56,5 @@
                 </div>
             </div>
         </container>
-        <style> #map { position:static }</style>
     </body>
 </html> 

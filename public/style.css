@@ -1,10 +1,6 @@
 * {
     box-sizing: border-box;
   }
-
-  element.style {
-    position: static;
-  }
   
   body {
     margin: 0;
@@ -12,7 +8,95 @@
     background-color: #C1B5AD;
   }
 
+  #main-app {
+    display: flex;
+    flex-direction: row-reverse
+  }
+
   #map {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  #nav-bar {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5em;
+    display: flex;
+    height: 4em;
+    background-color:darkgreen;
+    justify-content: center;
+  }
+.nav-links{
+    word-spacing: 20 px;
+    text-decoration: none;
+    margin: 0.9em 6em 1.2em 6em;
+    flex-direction: row;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  .mapboxgl-control-container {
+    visibility: hidden;
+    flex: 0;
+  }
+
+  .mapboxgl-canvas {
+    position: static !important;
+  }
+
+  #option-box {
+    display: inline-flex;
+    flex-direction: column;
+    width: 16em;
+    background-color: black;
+  }
+
+  #possible-locations {
+    width: 25vw;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2em;
+    background-color: lightgray;
+  }
+
+  #possible-loc-buttons {
+    display: inline-flex;
+  }
+
+  select {
+    width: 75%
+  }
+
+  input {
+    width: 20%
+  }
+
+  #itinerary {
+    width: 25vw;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    background-color: lightgray;
+  }
+
+  #itinerary-header {
+    text-align: center;
+    height: 2em;
+  }
+  
+  /* #map {
     height: 100vh;
     width: 100vw;
     flex: 3
@@ -21,22 +105,8 @@
     justify-content: flex-start;
   }
 
-  #mainapp {
+  #main-app {
     display: flex;
-  }
-
-  #nav-bar {
-    display: flex;
-    width: 100vw;
-    height: 4em;
-    background-color: red;
-    justify-content: center;
-  }
-
-  #nav-bar .nav-links{
-    word-spacing: 20 px;
-    text-decoration: none;
-    margin: 1.2em 6em;
   }
   
   #option-box {
@@ -46,4 +116,4 @@
     flex-direction: column;
     justify-content: flex-end;
     flex: 1
-  }
+  } */

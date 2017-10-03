@@ -6,6 +6,51 @@
         <script src='./bundle.js' defer></script>
     </head>
     <body>
-        <div id='map'></div>
+        <container id="main-app">
+            <div id="nav-bar">
+                <a href class="nav-links">Home</a>
+                <a href class="nav-links">About</a>
+                <a href class="nav-links">Contact</a>
+            </div>
+            <div id="map">
+                <div id="option-box">
+                    <div id="possible locations">
+                        <h4>Hotels</h4>
+                        <select>
+                            <option value="Hotels">[xxxxxxxx]</option>
+                            <input type="button" value="X">
+                        </select>
+                        <h4>Restaurants</h4>
+                        <select>
+                            <option value="Restaurants">[xxxxxxxx]</option>
+                            <input type="button" value="X">
+                        </select>
+                        <h4>Things To Do</h4>
+                        <select>
+                            <option value="Things To Do">[xxxxxxxx]</option>
+                            <input type="button" value="X">
+                        </select>
+                    </div>
+                    <div id="itinerary">
+                        <div id="itinerary-header"><h2>Itinerary:</h3></div>
+                        <div id="itinerary-body">
+                            <h4>My Hotels</h4>
+                                <ul>
+                                    <li>xxxxxxxx<input type="button" value="X"></li>
+                                </ul>
+                            <h4>My Restaurants</h4>
+                                <ul>
+                                    <li>xxxxxxxx<input type="button" value="X"></li>
+                                </ul>
+                            <h4>My Activities</h4>
+                                <ul>
+                                    <li>xxxxxxxx<input type="button" value="X"></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
+        <style> #map { position:static }</style>
     </body>
-</html>
+</html> 
